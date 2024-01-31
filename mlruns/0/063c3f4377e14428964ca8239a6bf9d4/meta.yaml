@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Swaraj/Desktop/Learning/E2ECVProject/E2ECVProject/mlruns/0/063c3f4377e14428964ca8239a6bf9d4/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 063c3f4377e14428964ca8239a6bf9d4
+run_name: awesome-vole-673
+run_uuid: 063c3f4377e14428964ca8239a6bf9d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706716107953
+status: 1
+tags: []
+user_id: Swaraj
