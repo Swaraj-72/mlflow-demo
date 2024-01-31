@@ -75,21 +75,16 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        predictions = lr.predict(train_x)
-        signature = infer_signature(train_x, predictions)
+        # predictions = lr.predict(train_x)
+        # signature = infer_signature(train_x, predictions)
         
-        # # For remote server only (Dagshub)
-        # remote_server_uri = "https://dagshub.com/entbappy/MLflow-Basic-Demo.mlflow"
-        # mlflow.set_tracking_uri(remote_server_uri)
-
+        # For remote server only (Dagshub)
+        remote_server_uri = "https://dagshub.com/swarajreddy10972/mlflow-demo.mlflow"
+        mlflow.set_tracking_uri(remote_server_uri)
 
         # For remote server only (AWS)
         # remote_server_uri = "http://ec2-54-147-36-34.compute-1.amazonaws.com:5000/"
         # mlflow.set_tracking_uri(remote_server_uri)
-
-
-
-
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
